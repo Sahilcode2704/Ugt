@@ -130,7 +130,7 @@ sahiln27042008@gmail.com
 # ================== RUN ==================
 if __name__ == "__main__":
     contacts_csv_emails = load_contacts()
-    github_emails = get_github_emails(GITHUB_ORG)
+    github_emails = get_github_emails(tech)
     all_emails = contacts_csv_emails.union(github_emails)
 
     print(f"📬 Total unique emails to send: {len(all_emails)}")
